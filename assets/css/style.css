@@ -1,0 +1,47 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+/* Global */
+
+:root {
+  --color-navy-850: #1c2431;
+  --color-navy-900: #181f2a;
+  --color-navy-950: #0b1523;
+  --color-navy-800: #1a2533;
+  --color-teal-200: #65e2d9;
+  --color-cyan-500: #00bfff;
+  --color-red-500: #ff4d4d;
+  --color-white: #ffffff;
+  --font-primary: "Open Sans", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+}
+
+html {
+  font-szie: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-white);
+  background-color: var(--color-navy-900);
+  font-family: var(--font-primary);
+}
+
+/* Base Styles */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
