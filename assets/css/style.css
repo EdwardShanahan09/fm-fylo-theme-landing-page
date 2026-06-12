@@ -18,7 +18,7 @@
 }
 
 html {
-  font-szie: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
@@ -31,6 +31,7 @@ body {
   color: var(--color-white);
   background-color: var(--color-navy-900);
   font-family: var(--font-primary);
+  padding: 2.4rem 0 0 0;
 }
 
 /* Base Styles */
@@ -44,4 +45,85 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.4rem;
+
+  img {
+    width: 8rem;
+    height: 2.4rem;
+  }
+
+  ul {
+    display: flex;
+    column-gap: 2.4rem;
+
+    a {
+      font-size: 1.2rem;
+      font-family: var(--font-heading);
+      line-height: 120%;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* Media Queries Tablet */
+
+@media (min-width: 768px) {
+  body {
+    padding: 8rem 0 0 0;
+  }
+
+  nav {
+    padding: 0 5.4rem;
+    img {
+      width: 13.8rem;
+      height: 4rem;
+    }
+
+    ul {
+      display: flex;
+      column-gap: 4.8rem;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+/* Media Queries Desktop */
+
+@media (min-width: 1440px) {
+  nav {
+    padding: 0 8rem;
+
+    img {
+      width: 17.6rem;
+      height: 5rem;
+    }
+
+    ul {
+      display: flex;
+      column-gap: 5.6rem;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
