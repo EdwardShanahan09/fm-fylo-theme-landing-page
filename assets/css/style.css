@@ -276,6 +276,10 @@ main {
   padding: 4rem 2.8rem;
   z-index: 2;
 
+  h2 {
+    margin-bottom: 2.4rem;
+  }
+
   p {
     font-size: 1.4rem;
     line-height: 150%;
@@ -434,7 +438,16 @@ footer {
   }
 
   .cta {
-    width: 48rem;
+    max-width: 48rem;
+    padding: 5rem 4rem;
+
+    h2 {
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      margin-bottom: 3.2rem;
+    }
   }
 }
 
@@ -501,5 +514,34 @@ footer {
     max-width: 100%;
     margin: auto 0 22rem auto;
     padding: 0 8rem;
+  }
+
+  .cta {
+    max-width: 86rem;
+    padding: 5rem 8rem;
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      margin-bottom: 3.2rem;
+    }
+
+    input {
+      margin-bottom: 0;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 2.4rem;
+    }
+  }
+
+  .cta .btn {
+    max-width: 20rem;
   }
 }
