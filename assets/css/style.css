@@ -314,6 +314,100 @@ main {
 
 footer {
   padding-top: 26rem;
+  padding: 26rem 2.4rem 4.8rem 2.4rem;
+}
+
+.footer__logo {
+  width: 10.8rem;
+  height: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer__info {
+  margin-bottom: 5.6rem;
+
+  li {
+    display: flex;
+    column-gap: 1.6rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+}
+
+.footer__nav {
+  margin-bottom: 4rem;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.footer__second-nav {
+  margin-bottom: 4.8rem;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.footer__social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.footer__social-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.footer__social-links li a:hover {
+  color: var(--color-teal-200);
+  border-color: var(--color-teal-200);
+}
+
+.footer__social-links i {
+  font-size: 1.4rem;
 }
 
 /* Media Queries Tablet */
