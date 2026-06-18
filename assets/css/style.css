@@ -543,6 +543,32 @@ footer {
       margin-bottom: 3.2rem;
     }
   }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 26rem 5.4rem 4.8rem 5.4rem;
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    grid-column: 1/-1;
+    margin-bottom: 5.6rem;
+  }
+
+  .footer__info {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__info-location {
+    flex-basis: 60%;
+  }
+
+  .footer__info-contact {
+    flex-basis: 30%;
+  }
 }
 
 /* Media Queries Desktop */
@@ -637,5 +663,15 @@ footer {
 
   .cta .btn {
     max-width: 20rem;
+  }
+
+  footer {
+    padding: 26rem 8rem 4.8rem 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8rem;
+  }
+
+  .footer__info {
+    grid-column: 1 / 3;
   }
 }
