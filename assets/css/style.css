@@ -75,6 +75,7 @@ ul {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -135,16 +136,23 @@ nav {
   flex-direction: column;
   text-align: center;
   padding: 0 2.4rem;
-
-  img {
-    margin-bottom: 7.2rem;
-  }
+  position: relative;
 
   p {
     font-size: 1.4rem;
     line-height: 150%;
     margin-bottom: 2.4rem;
   }
+}
+
+.hero__img {
+  margin-bottom: 7.2rem;
+}
+
+.hero__bg--mobile {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
 /* Main */
@@ -451,15 +459,27 @@ footer {
   .hero {
     padding: 0 5.4rem;
 
-    img {
-      margin-bottom: 6.4rem;
-    }
-
     p {
       font-size: 1.4rem;
       line-height: 150%;
       margin-bottom: 4.8rem;
     }
+  }
+
+  .hero__img {
+    margin-bottom: 6.4rem;
+  }
+
+  .hero__bg--mobile {
+    display: none;
+    width: 100%;
+  }
+
+  .hero__bg--desktop {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
   }
 
   .hero {
@@ -601,13 +621,18 @@ footer {
     max-width: 720px;
     margin: 0 auto;
 
-    img {
-      margin-bottom: 5.6rem;
-    }
-
     p {
       margin-bottom: 3.2rem;
     }
+  }
+
+  .hero__img {
+    margin-bottom: 5.6rem;
+  }
+
+  .hero__bg--desktop {
+    width: 100vw;
+    /* max-width: none; */
   }
 
   .features {
