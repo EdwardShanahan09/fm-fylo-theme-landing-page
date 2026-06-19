@@ -146,7 +146,12 @@
       </section>
 
       <section class="testimonials">
-        <div class="testimonial">
+        <div class="testimonial testimonial-1">
+          <img
+            src="./assets/images/bg-quotes.png"
+            class="testimonial__quote"
+            alt="Quote Icon"
+          />
           <p class="testimonial__text">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
@@ -219,11 +224,18 @@
           be happy to help you.
         </p>
 
-        <form action="">
-          <input type="email" placeholder="email@example.com" />
+        <form id="signup-form">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
 
           <button class="btn">Get Started For Free</button>
         </form>
+
+        <p id="form__error"></p>
       </section>
     </main>
 
@@ -304,5 +316,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

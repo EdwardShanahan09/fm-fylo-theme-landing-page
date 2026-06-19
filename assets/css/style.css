@@ -247,6 +247,18 @@ main {
   padding: 2.4rem 2rem;
 }
 
+.testimonial-1 {
+  position: relative;
+}
+
+.testimonial__quote {
+  width: 3.2rem;
+  height: auto;
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+
 .testimonial__text {
   font-size: 1rem;
   line-height: 180%;
@@ -309,13 +321,21 @@ main {
 
   input[type="email"]::placeholder {
     color: #c0c0c0;
-    text-align: center;
   }
 }
 
 .cta .btn {
   padding: 1.6rem 0;
   width: 100%;
+}
+
+#form__error {
+  color: var(--color-red-500);
+  font-size: 1rem;
+  align-self: flex-start;
+  text-align: left;
+  margin-top: 0.8rem;
+  margin-left: 2.4rem;
 }
 
 /* Footer */
